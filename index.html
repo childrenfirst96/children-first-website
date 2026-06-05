@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,215 +12,228 @@ box-sizing:border-box;
 }
 body{
 font-family:Arial,sans-serif;
-line-height:1.8;
+line-height:1.7;
 color:#333;
 background:#fff;
 }
+header{
+background:white;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:1000;
+}
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+.logo img{
+height:70px;
+}
+.logo h1{
+font-size:24px;
+color:#12355B;
+}
+nav a{
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+color:#12355B;
+}
 .hero{
-background:linear-gradient(135deg,#12355B,#1f4f82);
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('IMG_2274.jpeg');
+background-size:cover;
+background-position:center;
 color:white;
 text-align:center;
-padding:100px 20px;
+padding:140px 20px;
 }
-.hero img{
-max-width:200px;
+.hero h2{
+font-size:54px;
 margin-bottom:20px;
 }
-.hero h1{
-font-size:3rem;
-margin-bottom:15px;
-}
 .hero p{
-max-width:900px;
+max-width:800px;
 margin:auto;
-font-size:1.2rem;
+font-size:20px;
 }
 .btn{
 display:inline-block;
+margin-top:30px;
 background:#F97316;
 color:white;
-padding:15px 35px;
+padding:16px 40px;
 border-radius:8px;
 text-decoration:none;
+font-size:20px;
 font-weight:bold;
-margin-top:30px;
 }
 .section{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
+padding:80px 10%;
 }
 .section h2{
 text-align:center;
+font-size:42px;
+margin-bottom:25px;
 color:#12355B;
-margin-bottom:30px;
-font-size:2.5rem;
+}
+.mission{
+background:#F7FAFC;
+text-align:center;
 }
 .impact{
-background:#12355B;
-color:white;
-padding:80px 20px;
-}
-.impact-grid{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:40px;
-margin-top:40px;
-}
-.impact-card{
-text-align:center;
-}
-.impact-card h3{
-font-size:3rem;
-color:#F97316;
-}
-.gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 margin-top:40px;
 }
-.gallery img{
-width:100%;
-border-radius:12px;
-}
-.donate{
-background:#F4B942;
-padding:90px 20px;
-text-align:center;
-}
-.footer{
-background:#0B2240;
-color:white;
-text-align:center;
+.card{
+background:white;
 padding:30px;
+border-radius:12px;
+box-shadow:0 4px 20px rgba(0,0,0,.08);
+text-align:center;
 }
 </style>
 </head>
 <body>
+<header>
+<div class="logo">
+<img src="3E792E4F-9BF2-4737-8755-1A2785A4D4A4.png">
+<h1>Children First Foundation</h1>
+</div>
+<nav>
+<a href="#mission">Mission</a>
+<a href="#impact">Impact</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 <section class="hero">
-<img src="images/logo.png" alt="Children First Foundation Logo">
-<h1>Every Child Deserves a Chance to Thrive</h1>
+<h2>Every Child Deserves a Chance to Thrive</h2>
 <p>
-Bringing hope, dignity, education, nutrition, healthcare,
-and opportunity to vulnerable children throughout Ivory Coast.
+Providing education, nutrition, healthcare,
+and hope for vulnerable children across Ivory Coast.
 </p>
-<a class="btn" href="https://www.givesendgo.com/GMDRR" target="_blank">
 Donate Today
-</a>
 </section>
-<section class="section">
-<h2>About Children First</h2>
-<p>
-Children First was founded on a simple belief: every child in Ivory Coast deserves a chance to dream, grow, and shine.
-Yet thousands of children face daily hardships — hunger, illness, unsafe living conditions, or the lack of a school to call their own.
-</p>
-<br>
-<p>
-At Children First, we are dedicated to restoring hope and opening doors for these children through nutritious meals,
-healthcare, quality education, and community support.
+<section id="mission" class="section mission">
+<h2>Our Mission</h2>
+<p style="max-width:900px;margin:auto;font-size:20px;">
+Children First Foundation exists to restore hope and opportunity
+to children living in poverty. Through education, nutrition,
+healthcare, and community support, we help children build
+a brighter future.
 </p>
 </section>
-<section class="impact">
-<h2 style="color:white;">Our Impact Goals</h2>
-<div class="impact-grid">
-<div class="impact-card">
-<h3>500+</h3>
+<section id="impact" class="section">
+<h2>Our Impact</h2>
+<div class="impact">
+<div class="card">
+<h3 style="font-size:48px;color:#16A34A;">500+</h3>
 <p>Children Supported</p>
 </div>
-<div class="impact-card">
-<h3>10,000+</h3>
-<p>Meals Distributed</p>
+<div class="card">
+<h3 style="font-size:48px;color:#F97316;">100+</h3>
+<p>School Supply Kits Distributed</p>
 </div>
-<div class="impact-card">
-<h3>500</h3>
-<p>School Supply Kits</p>
+<div class="card">
+<h3 style="font-size:48px;color:#12355B;">50+</h3>
+<p>Families Assisted</p>
 </div>
-<div class="impact-card">
-<h3>500</h3>
-<p>Hygiene Kits</p>
 </div>
-<div class="impact-card">
-<h3>25+</h3>
-<p>Wheelchairs Provided</p>
-</div>
+</section>
+<section id="gallery" class="section" style="background:#F7FAFC;">
+<h2>Photo Gallery</h2>
+<div style="
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:20px;">
+<img src="IMG_2271.jpeg" style="width:100%;border-radius:15px;">
+<img src="IMG_2272.jpeg" style="width:100%;border-radius:15px;">
+<img src="IMG_2273.jpeg" style="width:100%;border-radius:15px;">
+<img src="IMG_2274.jpeg" style="width:100%;border-radius:15px;">
+<img src="IMG_2275.jpeg" style="width:100%;border-radius:15px;">
+<img src="IMG_2276.jpeg" style="width:100%;border-radius:15px;">
 </div>
 </section>
 <section class="section">
-<h2>Our Work In Action</h2>
-<div class="gallery">
-<img src="images/classroom.jpg">
-<img src="images/schoolchildren.jpg">
-<img src="images/studying.jpg">
-<img src="images/classroom2.jpg">
-<img src="images/schoolyard.jpg">
-<img src="images/wheelchair1.jpg">
-</div>
+<h2>A Message From The Founder</h2>
+<p style="max-width:900px;margin:auto;text-align:center;font-size:20px;">
+
+I founded Children First because I believe every child deserves
+
+the opportunity to learn, grow, and succeed regardless of their
+
+circumstances. Together we can provide hope, dignity, education,
+
+nutrition, and a brighter future for vulnerable children across
+
+Ivory Coast.
+</p>
+<p style="text-align:center;margin-top:20px;font-weight:bold;font-size:22px;">
+
+— Banney Dro, Founder
+</p>
 </section>
-<section class="section">
-<h2>My Story</h2>
-<p>
-I know firsthand how difficult life can be for children growing up in poverty.
-My father didn't have a stable job, and we often struggled to have enough to eat.
+<section style="
+
+background:#F59E0B;
+
+padding:80px 20px;
+
+text-align:center;">
+<h2 style="color:#12355B;">
+
+Support Children In Ivory Coast
+</h2>
+<p style="
+
+max-width:900px;
+
+margin:auto;
+
+font-size:20px;">
+
+Every contribution helps provide food, education,
+
+healthcare, and essential resources for children in need.
 </p>
-<br>
-<p>
-After my father passed away, continuing my education became nearly impossible —
-a reality faced by thousands of children in Ivory Coast.
-</p>
-<br>
-<p>
-I founded Children First because I want to give these children the support I wish I had.
-Every child deserves the chance to thrive, to learn, and to dream.
-</p>
-<p><strong>— Banney Dro, Founder</strong></p>
-</section>
-<section class="donate">
-<h2 style="color:#12355B;">Support Children in Ivory Coast</h2>
-<p style="max-width:900px;margin:auto;">
-At Children First Foundation, our mission is to provide children in Ivory Coast
-with access to nutritious food, education, and essential daily necessities.
-</p>
-<br>
-<p style="max-width:900px;margin:auto;">
-Every contribution—large or small—can make a meaningful difference in the life of a child.
-Donations of $5 to $20 can help provide meals, school supplies, and other basic needs.
-</p>
-<a class="btn" href="https://www.givesendgo.com/GMDRR" target="_blank">
+
 Donate Now
-</a>
 </section>
-<section class="section" style="text-align:center;">
+<section id="contact" class="section">
 <h2>Contact Us</h2>
+<div style="text-align:center;font-size:20px;">
 <p>Email: childrenfirst96@gmail.com</p>
 <p>Phone: (317) 772-4621</p>
+</div>
 </section>
-  </section>
+<footer style="
 
-<section style="padding:60px 20px;background:white;">
-  <h2 style="text-align:center;color:#12355B;">Photo Gallery</h2>
+background:#12355B;
 
-  <div style="
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
-    margin-top:30px;">
+color:white;
 
-    <img src="IMG_2271.jpeg" style="width:100%;border-radius:12px;">
-    <img src="IMG_2272.jpeg" style="width:100%;border-radius:12px;">
-    <img src="IMG_2273.jpeg" style="width:100%;border-radius:12px;">
-    <img src="IMG_2274.jpeg" style="width:100%;border-radius:12px;">
-    <img src="IMG_2275.jpeg" style="width:100%;border-radius:12px;">
-    <img src="IMG_2276.jpeg" style="width:100%;border-radius:12px;">
+text-align:center;
 
-  </div>
-</section>
+padding:40px 20px;">
+<h3>Children First Foundation Inc.</h3>
+<p>Hope • Education • Nutrition • Opportunity</p>
+<p style="margin-top:15px;">
 
-<footer class="footer">
-<footer class="footer">
-<p>© 2026 Children First Foundation Inc. All Rights Reserved.</p>
-<p>Hope • Dignity • Opportunity</p>
+© 2026 Children First Foundation Inc.
+</p>
 </footer>
 </body>
 </html>
